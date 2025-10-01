@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="ogTitle ogDesc">
+  <title id="ogTitle">Dselevura Open Graph Image</title>
+  <desc id="ogDesc">Social share image placeholder for Dselevura Mentorship Program.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0B6FFF" />
+      <stop offset="60%" stop-color="#00C2A8" />
+      <stop offset="100%" stop-color="#FF7A18" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0F172A" />
+  <rect width="1200" height="630" fill="url(#bg)" opacity="0.18" />
+  <text x="50%" y="45%" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-size="86" font-weight="600" fill="#FFFFFF">Dselevura</text>
+  <text x="50%" y="58%" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="36" fill="#FFFFFF" opacity="0.95">Build. Ship. Land the Job.</text>
+</svg>

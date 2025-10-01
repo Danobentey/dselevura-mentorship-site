@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Mentor Placeholder</title>
+  <desc id="desc">Abstract avatar placeholder with initials style circle.</desc>
+  <defs>
+    <linearGradient id="mentorGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0B6FFF" />
+      <stop offset="100%" stop-color="#00C2A8" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="24" fill="#0F172A" />
+  <circle cx="200" cy="160" r="110" fill="url(#mentorGrad)" />
+  <rect x="70" y="250" width="260" height="110" rx="18" fill="#FF7A18" opacity="0.9" />
+  <text x="200" y="285" font-family="Montserrat,Arial,sans-serif" font-weight="600" font-size="42" text-anchor="middle" fill="#ffffff">MENTOR</text>
+</svg>
