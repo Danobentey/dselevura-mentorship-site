@@ -1,6 +1,6 @@
-import MultiStepAdmissionsForm from '../../components/ui/MultiStepAdmissionsForm';
+import AdmissionsForm from '../../components/ui/AdmissionsForm';
 
-export const metadata = { title: 'Admissions | Dselevura' };
+export const metadata = { title: 'Admissions | Dselevura Academy' };
 
 export default function AdmissionsPage() {
   return (
@@ -10,7 +10,7 @@ export default function AdmissionsPage() {
         <p className="mt-4 text-charcoal/70">Tell us about your goals. We review applications weekly and respond within 5 business days.</p>
       </div>
       <div className="mt-12">
-        <MultiStepAdmissionsForm />
+        <AdmissionsForm />
       </div>
     </div>
   );

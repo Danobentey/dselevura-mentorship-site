@@ -11,23 +11,23 @@ const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 
 export const metadata: Metadata = {
-  title: 'Dselevura Mentorship Program',
-  description: 'African tech mentorship and bootcamp programs helping talent build skills, ship real projects, and land jobs in tech.',
+  title: 'Dselevura Academy - African Tech Mentorship',
+  description: 'Dselevura Academy offers four specialized tracks: Software Development, UI/UX Design, Data Analytics, and Digital Marketing. Build skills, ship real projects, and launch your tech career in Africa.',
   openGraph: {
-    title: 'Dselevura Mentorship Program',
-    description: 'Build the skills. Ship real projects. Land the job. African tech mentorship & bootcamps.',
+    title: 'Dselevura Academy - African Tech Mentorship',
+    description: 'Four specialized tracks: Software Development, UI/UX Design, Data Analytics, Digital Marketing. Build the skills. Ship real projects. Land the job.',
     url: 'https://www.dselevura.example',
-    siteName: 'Dselevura Mentorship Program',
+    siteName: 'Dselevura Academy',
     images: [
-      { url: '/images/og-default.svg', width: 1200, height: 630, alt: 'Dselevura Mentorship' }
+      { url: '/images/og-default.svg', width: 1200, height: 630, alt: 'Dselevura Academy' }
     ],
     locale: 'en_US',
     type: 'website'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dselevura Mentorship Program',
-    description: 'Build the skills. Ship real projects. Land the job.',
+    title: 'Dselevura Academy - African Tech Mentorship',
+    description: 'Four specialized tracks: Software Development, UI/UX, Data Analytics, Digital Marketing.',
   images: ['/images/og-default.svg']
   },
   icons: { icon: '/favicon.ico' }

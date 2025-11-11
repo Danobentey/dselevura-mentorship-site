@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="mt-24 border-t border-slate-200 bg-white py-12 text-sm">
       <div className="container-responsive grid gap-8 md:grid-cols-4">
         <div>
-          <h3 className="font-heading text-base font-semibold">Dselevura</h3>
+          <h3 className="font-heading text-base font-semibold">Dselevura Academy</h3>
           <p className="mt-2 text-xs text-charcoal/70">African tech mentorship & career acceleration.</p>
         </div>
         <div>
@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container-responsive mt-10 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-6 text-xs md:flex-row">
-        <p>&copy; {new Date().getFullYear()} Dselevura. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Dselevura Academy. All rights reserved.</p>
         <p className="text-charcoal/60">Built for impact in African tech.</p>
       </div>
     </footer>

@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { clsx } from 'clsx';
 
@@ -19,7 +20,10 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-offwhite/80 backdrop-blur">
       <nav className="container-responsive flex h-16 items-center justify-between">
-        <Link href="/" className="font-heading text-lg font-bold tracking-tight text-primary focus-ring">Dselevura</Link>
+        <Link href="/" className="flex items-center gap-2 focus-ring rounded">
+          <Image src="/images/logo.svg" alt="Dselevura Academy Logo" width={40} height={40} priority />
+          <span className="font-heading text-lg font-bold tracking-tight text-primary">Dselevura</span>
+        </Link>
         <button aria-label="Toggle menu" onClick={() => setOpen(o => !o)} className="md:hidden focus-ring rounded p-2">
           <span className="block h-0.5 w-6 bg-charcoal mb-1" />
           <span className="block h-0.5 w-6 bg-charcoal mb-1" />
