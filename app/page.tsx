@@ -1,5 +1,6 @@
 import Hero from '../components/ui/Hero';
 import { StatCard, TestimonialCard } from '../components/ui/Cards';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function HomePage() {
@@ -41,10 +42,18 @@ export default function HomePage() {
           <h2 className="text-3xl font-bold">Partners</h2>
           <p className="mt-3 max-w-prose text-charcoal/70">We collaborate with companies and communities advancing African technical talent.</p>
           <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-4">
-            <div className="h-12 rounded bg-offwhite shadow-inner" />
-            <div className="h-12 rounded bg-offwhite shadow-inner" />
-            <div className="h-12 rounded bg-offwhite shadow-inner" />
-            <div className="h-12 rounded bg-offwhite shadow-inner" />
+            <div className="flex items-center justify-center rounded bg-offwhite shadow-inner p-3">
+              <Image src="/images/partner-alchris_energy.png" alt="Alchris Energy" width={160} height={160} className="h-auto max w-full object-contain" />
+            </div>
+            <div className="flex items-center justify-center rounded bg-offwhite shadow-inner p-3">
+              <Image src="/images/partner-eso_city-logo.png" alt="Eso City" width={160} height={160} className="h-auto max w-full object-contain" />
+            </div>
+            <div className="flex items-center justify-center rounded bg-offwhite shadow-inner p-3">
+              <Image src="/images/partner-fixxir.png" alt="Fixxir" width={160} height={160} className="h-auto max w-full object-contain" />
+            </div>
+            <div className="flex items-center justify-center rounded bg-offwhite shadow-inner p-3">
+              <Image src="/images/dselevura-logo.png" alt="Dselevura" width={160} height={160} className="h-auto max w-full object-contain" />
+            </div>
           </div>
           <div className="mt-10">
             <Link href="/admissions" className="rounded bg-cta px-6 py-3 text-sm font-semibold text-white shadow hover:bg-cta/90 focus-ring">Apply Now</Link>
