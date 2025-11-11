@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
-import { clsx } from 'clsx';
 
 const navItems = [
   { href: '/', label: 'Home' },
@@ -9,7 +9,7 @@ const navItems = [
   { href: '/programs', label: 'Programs' },
   { href: '/portfolio', label: 'Portfolio' },
   { href: '/community', label: 'Community' },
-  { href: '/mentors', label: 'Mentors' },
+  // { href: '/mentors', label: 'Mentors' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' }
 ];
@@ -19,10 +19,13 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-offwhite/80 backdrop-blur">
       <nav className="container-responsive flex h-16 items-center justify-between">
-        <Link href="/" className="font-heading text-lg font-bold tracking-tight text-primary focus-ring">Dselevura</Link>
+        <Link href="/" className="flex items-center rounded focus-ring">
+          <Image src="/images/dselevura-logo.png" alt="Dselevura Mentorship Program" width={40} height={40} priority />
+          <span className="sr-only">Dselevura Mentorship Program</span>
+        </Link>
         <button aria-label="Toggle menu" onClick={() => setOpen(o => !o)} className="md:hidden focus-ring rounded p-2">
-          <span className="block h-0.5 w-6 bg-charcoal mb-1" />
-          <span className="block h-0.5 w-6 bg-charcoal mb-1" />
+          <span className="mb-1 block h-0.5 w-6 bg-charcoal" />
+          <span className="mb-1 block h-0.5 w-6 bg-charcoal" />
           <span className="block h-0.5 w-6 bg-charcoal" />
         </button>
         <ul className="hidden gap-6 md:flex">

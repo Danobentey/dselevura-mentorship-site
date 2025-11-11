@@ -1,0 +1,14 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="primaryGradient" x1="30" y1="20" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B6FFF" />
+      <stop offset="1" stop-color="#0042CC" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="20" y1="40" x2="55" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00C2A8" />
+      <stop offset="1" stop-color="#00907D" />
+    </linearGradient>
+  </defs>
+  <path d="M20 20H70L100 60L70 100H20L50 60L20 20Z" fill="url(#primaryGradient)" />
+  <path d="M20 20V100L50 60L20 20Z" fill="url(#accentGradient)" />
+</svg>

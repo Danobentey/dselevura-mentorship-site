@@ -23,7 +23,14 @@ export default function Hero({ title, subtitle, ctaLabel = 'Apply Now', ctaHref 
           </div>
         </div>
         <div className="relative aspect-video w-full md:aspect-auto md:h-full">
-          <Image src="/images/hero-placeholder.svg" alt="Abstract gradient background representing mentorship and growth" fill className="object-cover rounded-lg shadow" />
+          <Image
+            src="/images/hero-image.png"
+            alt="Diverse group of African software mentees collaborating on laptops"
+            fill
+            priority
+            sizes="(min-width: 768px) 50vw, 90vw"
+            className="rounded-lg object-cover shadow"
+          />
         </div>
       </div>
       <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-primary/5 via-accent/5 to-cta/5" />
