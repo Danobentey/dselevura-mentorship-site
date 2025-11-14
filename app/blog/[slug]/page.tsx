@@ -4,15 +4,16 @@ import { notFound } from 'next/navigation';
 import { getPostBySlug, getPostParams } from '../../../lib/blog';
 
 type BlogParams = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export function generateStaticParams() {
   return getPostParams();
 }
 
-export function generateMetadata({ params }: BlogParams) {
-  const post = getPostBySlug(params.slug);
+export async function generateMetadata({ params }: BlogParams) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
   if (!post) return { title: 'Blog Post | Dselevura' };
   return {
     title: `${post.title} | Dselevura`,
@@ -20,8 +21,9 @@ export function generateMetadata({ params }: BlogParams) {
   };
 }
 
-export default function BlogPostPage({ params }: BlogParams) {
-  const post = getPostBySlug(params.slug);
+export default async function BlogPostPage({ params }: BlogParams) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
   if (!post) return notFound();
 
   const formattedDate = new Intl.DateTimeFormat('en-US', {
