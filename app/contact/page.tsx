@@ -12,11 +12,11 @@ export default function ContactPage() {
         <div className="space-y-6 text-sm">
           <div>
             <p className="font-semibold">WhatsApp</p>
-            <a href="https://wa.me/123456789" className="text-primary hover:underline">Chat with us →</a>
+            <a href="https://wa.me/+234705251242" className="text-primary hover:underline">Chat with us →</a>
           </div>
           <div>
             <p className="font-semibold">Email</p>
-            <a href="mailto:info@dselevura.example" className="text-primary hover:underline">info@dselevura.example</a>
+            <a href="mailto:admin@dselevura.com" className="text-primary hover:underline">info@dselevura.example</a>
           </div>
           <div>
             <p className="font-semibold">Office</p>
