@@ -114,11 +114,12 @@ export default function MultiStepAdmissionsForm() {
         }
       });
 
-      const res = await fetch('https://formspree.io/f/your-placeholder', {
+      const res = await fetch('/api/applications', {
         method: 'POST',
         body: formData
       });
-      if (!res.ok) throw new Error('Failed');
+      const result = await res.json().catch(() => null);
+      if (!res.ok || !result?.success) throw new Error('Failed');
       setStatus('success');
       setCompleted(intent);
       setSubmitted({ ...data });

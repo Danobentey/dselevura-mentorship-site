@@ -33,7 +33,7 @@ export function MentorCard({ name, expertise, image, linkedin }: { name: string;
   const src = image || '/images/mentor-placeholder.svg';
   return (
     <div className="group relative flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
-      <div className="relative h-40 w-full bg-slate-100">
+      <div className="relative h-[420px] w-full bg-slate-100">
         <Image src={src} alt={image ? name : `${name} placeholder avatar`} fill className="object-cover transition duration-300 group-hover:scale-105" />
       </div>
       <div className="flex flex-1 flex-col p-4">

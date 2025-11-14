@@ -38,9 +38,9 @@ components/
 ```
 
 ## Forms
-- Admissions multi-step form at `/admissions` with client-side validation.
+- Admissions multi-step form at `/admissions` with client-side validation. Submissions are posted to `/api/applications`, which appends data to a configured Google Sheet.
 - Contact form placeholder at `/contact` (currently alerts, replace with integration).
-- To integrate Formspree: replace placeholder endpoint in `MultiStepAdmissionsForm.tsx`.
+- Receipt uploads are stored in the sheet as base64 Data URLs; migrate to cloud storage if you need long-term archival.
 
 ## Image Assets Strategy
 - Temporary placeholders under `public/images/`.
@@ -98,9 +98,11 @@ npm start
 - Ensure CSP updated to remove `'unsafe-inline'` once inline scripts are gone.
 - Add analytics script with `defer` or via Next Script strategy.
 
-### 5. Environment / Secrets (Future)
-- `FORMSPREE_ENDPOINT` to move endpoint out of code.
-- `ANALYTICS_KEY` for analytics provider.
+### 5. Environment / Secrets
+- `GOOGLE_SERVICE_ACCOUNT_EMAIL`
+- `GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY` (wrap multiline key with quotes and replace actual newlines with `\n` in `.env.local`)
+- `GOOGLE_SHEETS_ID`
+- `GOOGLE_SHEETS_TAB` (optional, defaults to `Applications`)
 - Add `.env.local` (excluded from VCS) for local overrides.
 
 ## Accessibility

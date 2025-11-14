@@ -9,7 +9,7 @@ const navItems = [
   { href: '/programs', label: 'Programs' },
   { href: '/portfolio', label: 'Portfolio' },
   { href: '/community', label: 'Community' },
-  // { href: '/mentors', label: 'Mentors' },
+  { href: '/mentors', label: 'Mentors' },
   { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' }
 ];
